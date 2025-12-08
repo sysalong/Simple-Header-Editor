@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Header Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header-row header-title">
+      <div class="col-check">启用</div>
+      <div class="col-input">Header Name (参数名)</div>
+      <div class="col-input">Header Value (参数值)</div>
+      <div class="col-del"></div>
+    </div>
+    
+    <div id="rules-container"></div>
+
+    <button id="add-btn" class="add-btn">+ 添加新行</button>
+    
+    <div class="status-bar" id="status-msg">设置已自动保存并生效</div>
+  </div>
+
+  <!-- 新增：右下角的小按钮 -->
+  <button id="info-btn" class="info-btn">i</button>
+
+  <!-- 新增：弹出的模态框 -->
+  <div id="info-modal" class="modal">
+    <div class="modal-content">
+      <p>作者：Shrimp</p>
+      <p>博客：<a href="https://woj.app" target="_blank">https://woj.app</a></p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
