@@ -3,7 +3,7 @@
 
     具体使用方法：
     
-1、将上述文件放到同一目录（例如 custom-header-modifier/）。
+1、将上述文件放到同一目录（例如 custom-header-modifier/），也可以直接下载打包好的文件 https://github.com/sysalong/Simple-Header-Editor/releases/download/v1/custom-header-modifier.zip  放到同一个英文目录内。
 
 2、打开 Chrome，访问：chrome://extensions/
 
