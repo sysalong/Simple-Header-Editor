@@ -19,7 +19,7 @@
   
 插件如下图：
   
-![alt text](1.png "optional title")
+![alt text](2025-12-23_092930.png "optional title")
 
 --------------------
 
