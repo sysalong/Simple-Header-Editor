@@ -6,6 +6,54 @@ body {
   margin: 0;
 }
 
+/* 新增：配置栏样式 */
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.profile-select {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.icon-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  background: #f8f9fa;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #5f6368;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  background-color: #e8eaed;
+}
+
+.icon-btn.danger {
+  color: #d93025;
+}
+.icon-btn.danger:hover {
+  background-color: #fce8e6;
+  border-color: #fce8e6;
+}
+
+/* 原有样式保持不变 */
 .container {
   background: white;
   border-radius: 8px;
@@ -100,7 +148,7 @@ input[type="text"]:focus {
 .status-bar.show {
   opacity: 1;
 }
-/* 右下角 Info 按钮样式 */
+
 .info-btn {
   position: fixed;
   bottom: 10px;
@@ -111,7 +159,7 @@ input[type="text"]:focus {
   color: #555;
   border: 1px solid #ccc;
   border-radius: 50%;
-  font-family: serif; /* 使用衬线体显示 'i' */
+  font-family: serif;
   font-style: italic;
   font-weight: bold;
   cursor: pointer;
@@ -127,21 +175,19 @@ input[type="text"]:focus {
   border-color: #999;
 }
 
-/* 模态框背景（全屏遮罩） */
 .modal {
-  display: none; /* 默认隐藏 */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 200;
   align-items: center;
   justify-content: center;
 }
 
-/* 模态框内容区域 */
 .modal-content {
   background-color: white;
   padding: 20px;
@@ -149,7 +195,7 @@ input[type="text"]:focus {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   text-align: center;
   min-width: 200px;
-  animation: fadeIn 0.2s; /* 简单的淡入动画 */
+  animation: fadeIn 0.2s;
 }
 
 .modal-content p {

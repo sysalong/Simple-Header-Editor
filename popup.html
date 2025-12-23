@@ -6,6 +6,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="profile-row">
+    <select id="profile-select" class="profile-select"></select>
+    <button id="add-profile-btn" class="icon-btn" title="新建配置">+</button>
+    <button id="rename-profile-btn" class="icon-btn" title="重命名当前配置">✎</button>
+    <button id="del-profile-btn" class="icon-btn danger" title="删除当前配置">-</button>
+  </div>
+
   <div class="container">
     <div class="header-row header-title">
       <div class="col-check">启用</div>
@@ -21,10 +28,8 @@
     <div class="status-bar" id="status-msg">设置已自动保存并生效</div>
   </div>
 
-  <!-- 新增：右下角的小按钮 -->
   <button id="info-btn" class="info-btn">i</button>
 
-  <!-- 新增：弹出的模态框 -->
   <div id="info-modal" class="modal">
     <div class="modal-content">
       <p>作者：Shrimp</p>
